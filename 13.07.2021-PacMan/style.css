@@ -1,0 +1,48 @@
+body{
+    background-color: blue;
+}
+
+
+
+.pack-man{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 250px;
+    right: 300px;
+}
+.pacman-eye{
+    position: absolute;
+    top: 50px;
+    border-radius: 50%;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+}
+.pacman-top{
+    background-color:yellow;
+    height:100px;
+    width:200px;
+    border-radius:100px 100px 0 0;
+    animation: mouth1 0.5s infinite linear;
+}
+  
+  .pacman-bottom{
+  background-color:yellow;
+    height:100px;
+    width:200px;
+    border-radius:0 0 100px 100px;
+    animation: mouth2 0.5s infinite linear;
+}
+
+@keyframes mouth1 {
+	0%  {transform: rotate(0deg);}
+	50%{transform: rotate(-25deg);}
+}
+@keyframes mouth2 {
+    0%  {transform: rotate(0deg);}
+    50%{transform: rotate(25deg);}
+}
+
